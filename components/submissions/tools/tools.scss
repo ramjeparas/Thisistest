@@ -1,0 +1,13 @@
+.tools {
+    padding-bottom: 3rem;
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .button {
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.pagination {
+    width: 15%;
+
+    select {
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        border-radius: 0;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}

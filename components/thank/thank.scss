@@ -1,0 +1,103 @@
+.thank {
+	&__container {
+		@include breakpoint($md) {
+			min-height: calc(100vh - 50px);
+		}
+	}
+	&__content {
+		padding: 2rem 0;
+
+		@include breakpoint($md) {
+			padding: 4rem 0;
+		}
+		@include breakpoint($lg) {
+			padding: 5rem 0;
+		}
+		.copy {
+		}
+		p {
+			font-size: 3rem;
+			line-height: 1.16;
+		}
+	}
+	&__subcontent {
+		margin-bottom: 4rem;
+		padding: 2rem;
+
+		@include breakpoint($sm) {
+			margin: 0 0 6rem 0;
+		}
+		@include breakpoint($md) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 4rem 6rem;
+		}
+		@include breakpoint($lg) {
+			padding: 4rem 8rem;
+		}
+		@include breakpoint($xl) {
+			padding: 4rem 10rem;
+		}
+
+		&--col {
+			width: 100%;
+
+			&:nth-of-type(1) {
+				@include breakpoint($md) {
+					width: 65%;
+				}
+				@include breakpoint($xl) {
+					width: 57%;
+				}
+				p {
+					font-size: 2rem;
+					line-height: 1.25;
+				}
+			}
+			&:nth-of-type(2) {
+				@include breakpoint($md) {
+					width: 29%;
+				}
+				p {
+					font-size: 2.5rem;
+					line-height: 1.25;
+				}
+			}
+
+			.button {
+				font-size: 2.25rem;
+				@include breakpoint($md) {
+					width: 100%;
+				}
+			}
+		}
+		.copy {
+		}
+	}
+
+	&--brand {
+		width: 100%;
+		padding: 2rem 0;
+
+		@include breakpoint($md) {
+			width: auto;
+		}
+		@include breakpoint($lg) {
+			width: auto;
+			padding: 2rem 0;
+		}
+		img {
+			width: 180px;
+			height: auto;
+		}
+	}
+
+	p {
+		margin-bottom: 25px;
+	}
+
+	.headline {
+		margin-bottom: 25px;
+	}
+}

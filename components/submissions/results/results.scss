@@ -1,0 +1,59 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    a {
+        text-decoration: underline;
+    }
+}
+thead {
+    th {
+        vertical-align: bottom;
+    }
+}
+th,
+td {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    border: 1px solid darken(white, 15%);
+    padding: 0.5rem;
+    max-width: 200px;
+    overflow: hidden;
+}
+.headline {
+    margin-bottom: 25px;
+    font-family: sans-serif;
+    font-size: 3rem;
+}
+.button {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+.results {
+    text-align: left;
+    display: flex;
+    position: relative;
+    overflow-x: scroll;
+
+    &__menu {
+        width: 20%;
+        border-right: 1px solid darken(white, 15%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    &__main {
+        width: 80%;
+        margin-left: 20%;
+        padding: 2rem 3% 1rem 3%;
+    }
+
+    &__table {
+        width: 100%;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+}

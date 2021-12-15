@@ -1,0 +1,53 @@
+.benefits {
+	padding: 2rem 0 4rem 0;
+	@include breakpoint($md) {
+		padding: 6rem 0 8rem 0;
+	}
+	@include breakpoint($lg) {
+		padding: 6rem 0 10rem 0;
+	}
+
+	&__container {
+		width: 100%;
+		@include breakpoint($md) {
+			display: flex;
+		}
+	}
+
+	&__col {
+		width: 100%;
+
+		&--content {
+			.copy {
+			}
+			ul {
+				list-style-type: none;
+				@include breakpoint($sm) {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					width: 100%;
+				}
+			}
+			li {
+				display: flex;
+				margin-top: 2rem;
+				@include breakpoint($sm) {
+					width: 45%;
+				}
+				@include breakpoint($lg) {
+					width: 30%;
+					margin-top: 4rem;
+				}
+
+				span:first-of-type {
+					min-width: 80px;
+				}
+			}
+			img {
+				width: 65px;
+				height: 65px;
+			}
+		}
+	}
+}

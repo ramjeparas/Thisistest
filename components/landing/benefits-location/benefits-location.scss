@@ -1,0 +1,48 @@
+.benefits-location {
+	padding: 0 0 4rem 0;
+	@include breakpoint($md) {
+		padding: 0 0 8rem 0;
+	}
+	@include breakpoint($lg) {
+		padding: 0 0 10rem 0;
+	}
+
+	&--container {
+		width: 100%;
+		@include breakpoint($sm) {
+			display: flex;
+		}
+	}
+
+	&--col {
+		width: 100%;
+
+		.copy {
+		}
+		.headline {
+			margin-bottom: 3rem;
+		}
+
+		ul {
+			list-style-type: square;
+			margin-left: 2rem;
+			margin-bottom: 3rem;
+			@include breakpoint($sm) {
+				column-count: 2;
+			}
+		}
+		li {
+			margin-bottom: 1rem;
+			@include breakpoint($sm) {
+				width: 90%;
+			}
+			@include breakpoint($lg) {
+				margin-bottom: 3rem;
+			}
+		}
+		li::marker {
+			color: $color-green;
+		}
+	}
+
+}

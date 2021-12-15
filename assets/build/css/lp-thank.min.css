@@ -1,0 +1,197 @@
+/**
+Added custom font
+ */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../font/helveticaneue.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url('../font/helveticaneue-bold.woff2') format('woff2');
+}
+
+
+h1 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 2.5rem !important;
+    font-size: 5rem;
+    line-height: 1 !important;
+}
+@media (min-width: 992px) {
+    h1 {
+        font-size: 7rem;
+    }
+}
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 8rem;
+    }
+}
+li,
+p {
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+@media (min-width: 992px) {
+    li,
+    p {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+}
+
+li span,
+p span {
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+button:hover {
+    cursor: pointer;
+}
+.button {
+    display: inline-block;
+    border: 1px solid #2B74B2;
+    background: #2B74B2;
+    padding: 0.5rem 3rem;
+    color: #fff;
+    text-align: center;
+    font-family: Helvetica Neue Bold, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.button:active,
+.button:focus,
+.button:hover {
+    cursor: pointer;
+    background: #004497;
+    color: #fff;
+    border-color: #004497;
+}
+[data-animate] {
+    opacity: 0;
+    -webkit-transition: background-image 0.1s linear, opacity 0.2s linear, -webkit-transform 1.25s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: background-image 0.1s linear, opacity 0.2s linear, -webkit-transform 1.25s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: background-image 0.1s linear, opacity 0.2s linear, transform 1.25s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: background-image 0.1s linear, opacity 0.2s linear, transform 1.25s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: background-image 0.1s linear, opacity 0.2s linear, transform 1.25s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 1.25s cubic-bezier(0.77, 0, 0.175, 1);
+}
+[data-animate*="hide-bg"] {
+    background-image: none !important;
+}
+[data-animate*="top"] {
+    -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+[data-animate*="right"] {
+    -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    transform: translateX(100px);
+}
+[data-animate*="bottom"] {
+    -webkit-transform: translateY(3rem);
+    -ms-transform: translateY(3rem);
+    transform: translateY(3rem);
+}
+[data-animate*="left"] {
+    -webkit-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    transform: translateX(-100px);
+}
+@media (min-width: 768px) {
+    [data-animate*="scale-in"] {
+        -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+    }
+}
+[data-animate*="scrolled"] {
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+}
+*,
+body,
+html {
+    text-rendering: optimizeLegibility;
+}
+body,
+html {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Helvetica Neue Bold, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    color: inherit;
+    font-size: 60%;
+    line-height: inherit;
+}
+a {
+    color: inherit;
+    -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+a:active,
+a:focus,
+a:hover {
+    color: inherit;
+    cursor: pointer;
+}
+b {
+    font-family: Helvetica Neue Bold, Helvetica, Arial, sans-serif;
+
+}
+main {
+    width: 100%;
+    overflow: hidden;
+}
+section {
+    overflow: hidden;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.row {
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}

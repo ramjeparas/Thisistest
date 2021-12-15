@@ -1,0 +1,142 @@
+select, [type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
+	height: 3.25rem;
+	background-color: white;
+	box-shadow: none;
+	border-style: solid;
+	margin: 0;
+	padding: 0.25rem 0.5rem;
+	font-size: 1.6rem;
+	transition: all 0.3s ease-in-out;
+	color: black;
+
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+[type=file], [type=checkbox], [type=radio] {
+	margin-bottom: 0;
+}
+
+label {
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 1;
+	color: inherit;
+
+	> * {
+		margin-top: 0.125rem !important;
+	}
+
+	&.resume {
+		background-color: white;
+		border: 1px solid white;
+		color: $color-brown;
+		padding: 0.5rem;
+		cursor: pointer;
+		margin-top: .8rem;
+		padding: 7px 25px;
+		display: inline-block;
+	}
+}
+
+#file-chosen {
+	margin-left: 1rem;
+	font-family: $main-font;
+	font-size: 1.5rem;
+}
+
+select {
+	appearance: none;
+	background-image: url("../img/icons/arrows.svg");
+	background-position: right -1.5rem center;
+	background-repeat: no-repeat;
+	background-size: 8px;
+	padding-right: 2rem;
+	color: black;
+}
+
+.form {
+	@include placeholderColor(black);
+	color: inherit;
+	margin-top: 1.5rem;
+
+	@include breakpoint($lg) {
+		position: relative;
+		z-index: 2;
+	}
+
+	> * + * {
+		margin-top: 1rem;
+	}
+
+	&__copy {
+	}
+
+	&--copy {
+		p {
+			font-size: 1.6rem;
+			line-height: 1.1;
+		}
+	}
+
+	&--title {
+		margin-bottom: 8px;
+		font-size: 2.5rem;
+		line-height: 1.25;
+	}
+
+	&--wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 1.6rem;
+
+		> * {
+			width: 30%;
+		}
+
+		p {
+			width: 100%;
+			margin-bottom: 0.25rem;
+			font-size: 1.6rem;
+			line-height: 1.1;
+			font-weight: bold;
+		}
+	}
+
+	&--terms {
+		font-size: 1.1rem;
+
+		a {
+			text-decoration: underline;
+		}
+
+	}
+
+	&--button {
+		margin-top: 1rem;
+		padding: .75rem 1rem 1rem 1rem ;
+		border-radius: 0;
+		background-color: $color-green;
+		color: white;
+		font-family: $main-font;
+		font-size: 2.25rem;
+		font-weight: $font-weight-bold;
+		line-height: 1;
+		width: 100%;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: darken($color-green, 5%);
+		}
+	}
+
+	&--error {
+		margin-top: 1rem;
+		padding: 1rem;
+		background-color: red;
+		color: white;
+		font-weight: bold;
+	}
+}
